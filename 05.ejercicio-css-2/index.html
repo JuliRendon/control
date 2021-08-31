@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Ejercicio 5 CSS</title>
+</head>
+
+<body>
+<!--  **Nombre**, con un control de tipo texto que sea obligatorio cubrirlo y con autofoco.
+  . **Correo electrónico**, con un control de tipo email que sea obligatorio.
+- **URL**, con un control de tipo url que cuando esté vacío muestre dentro la ayuda "Escribe la URL de tu página web personal" usando la propiedad _placeholder_.
+- **Fecha**, con un control de tipo date.
+- **Tiempo**, con un control de tipo time.
+- **Fecha y hora**, con un control de tipo datetime.
+- **Mes**, con un control de tipo month.
+- **Semana**, con un control de tipo week.
+- **Número**, con un control de tipo number que limite la entrada a un valor entre -10 y 10.
+- **Teléfono**, con un control de tipo tel que tenga un valor inicial y que no se pueda editar.
+- **Término de búsqueda**, con un control de tipo search y que este deshabiltado.
+- **Color favorito**, con un control de tipo color.
+- Un botón de envío.
+
+Además, tienes que tener en cuenta los siguientes requisitos:
+
+- Todos los campos anteriores deben tener su label asociado mediante la propiedad _for_.
+- El formulario debe estar estructurado usando las etiquetas fieldset (con sus legend)
+- El método de envío del formulario debe ser GET.
+- El destino del envío del formulario debe ser "".
+
+El HTML resultante debe ser validado por el [validador de HTML de la W3](https://validator.w3.org/#validate_by_input) y no dar ningún error.
+ -->
+ <form action="./" method="GET" id="form">
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="nombre">Nombre</label> 
+    <input type="text" name="nombre" id="nombre" required autofocus>
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required>
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="url">Url</label>
+    <input type="text" name="url" id="url" placeholder="Escribe la URL de tu página web personal">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="fecha">Fecha</label>
+      <input type="date" name="fecha" id="fecha">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="tiempo">Tiempo</label>
+    <input type="time" name="tiempo" id="tiempo">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="fechahora">Fecha y hora</label>
+    <input type="datetime-local" name="fechahora" id="fechahora">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="mes">Mes</label>
+    <input type="month" name="mes" id="mes">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="semana">Semana</label>
+    <input type="week" name="semana" id="semana">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="numero">Número</label>
+    <input type="number" name="numero" id="numero" min="-10" max="10">
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="telefono">Teléfono</label>
+    <input type="tel" name="telefono" id="telefono" value="602067683" readonly>
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="busqueda">Término de búsqueda</label>
+      <input type="search" name="busqueda" id="busqueda" disabled>
+    </fieldset>
+    <fieldset>
+      <legend>Ingrese los datos</legend>
+      <label for="color">Color favorito</label>
+      <input type="color" name="color" id="color">
+    </fieldset>
+    <fieldset>
+      <legend>Enviar el formulario</legend>
+      <button type="submit" name="enviar">Enviar</button>
+    </fieldset>
+ </form>
+</body>
+
+</html>

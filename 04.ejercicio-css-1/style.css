@@ -1,0 +1,54 @@
+/*1. Haz que el último li tenga fondo azul. Especifica ese fondo azul usando valores RGB  */
+.lista li:last-child {
+  background-color: rgb(0, 0, 255);
+  color: white;
+}
+
+/* 2. Haz que los li impares tengan el texto subrayado. Haz que el subrayado sea de color verde.  */
+.lista li:nth-child(odd) {
+  text-decoration: underline rgb(145, 255, 0);
+}
+
+/* 3. Haz que todos los elementos de la lista aparezcan en una sola línea en lugar de unos debajo de otros y que tengan una separación de 10 píxeles entre unos y otros. */
+
+.lista li {
+  display: inline;
+  margin-left: 10px;
+}
+
+/* 4. Haz que al final de cada li aparezca un emoji diferente sin modificar el html. */
+.lista :nth-child(1)::after {
+  content: ' 😜';
+}
+.lista :nth-child(2)::after {
+  content: ' 🍉';
+}
+.lista :nth-child(3)::after {
+  content: ' 🥳 ';
+}
+.lista :nth-child(4)::after {
+  content: ' 🐸 ';
+}
+.lista :nth-child(5)::after {
+  content: ' 🌌';
+}
+.lista :nth-child(6)::after {
+  content: ' 👾';
+}
+
+/* 5. Haz que el li que tiene texto en inglés tenga el tipo de letra del doble de tamaño que los otros y en mayúsculas. */
+li[lang='en'] {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+/* -----------------------Segunda lista------------------------------- */
+
+/* 1. En lugar de tener puntos a la izquierda de los elementos  tenga números romanos.*/
+#provincias li {
+  list-style-type: lower-roman;
+}
+
+#provincias :nth-child(2) {
+  list-style-type: initial;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;700&display=swap');
+body {
+  max-width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+header p {
+  font-weight: 300;
+  font-size: small;
+}
+
+h3 {
+  color: gray;
+  border-bottom: 2px solid gray;
+}
+h2 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 5px;
+}
+h1 {
+  font-size: 40px;
+  line-height: 15px;
+}
+
+#formulario {
+  margin: 0 auto;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  background-color: rgb(104, 104, 104);
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input {
+  height: 24px;
+}
+
+button {
+  height: 25px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+fieldset {
+  border: none;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  section,
+  form {
+    padding: 0 20px;
+  }
+
+  header {
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px 50px 20px;
+  }
+
+  section #img {
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    background-image: url('img-mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 769px) {
+  header {
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 30px;
+  }
+  section {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 400px;
+  }
+  #img {
+    width: 300px;
+    height: 300px;
+    background-image: url('img.png');
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin: 2px;
+  }
+
+  #formulario {
+    width: 70%;
+  }
+}
